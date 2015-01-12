@@ -1,0 +1,28 @@
+nesne ÜyeModeli 
+{
+	yazı EPosta { al; kur; }
+	yazı İsim { al; kur; }
+	yazı Şifre { al; kur; }
+
+	zaman DoğumTarihi { al; kur; }
+	sayı Yaş { al { getir Bugün - DoğumTarihi; } }
+
+	ondalıklı İlgiYüzdesi { al; kur; }
+
+	para Maaş { al; kur; }
+
+	obje Resim { al; kur; }
+
+	mantıksal ŞartlarıOnayladıMı { al; kur; }
+
+	oluşturan ÜyeModeli(yazı isim, yazı eposta)
+	{
+		EPosta = eposta;
+		İsim = isim;
+	}
+
+	işlem DoğruMu()
+	{
+		dön !ŞartlarıOnayladıMı || Yaş < 18;
+	}
+}

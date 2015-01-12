@@ -1,0 +1,21 @@
+nesne Ana
+{
+	işlem başlangıç()
+	{		
+		Ana.FiltreYöneticisi.FiltreEkle(yeni YetkiFiltresi());
+		
+		adres_ayarları();
+
+		nesne_gereklilik_ayarları();
+	}
+
+	işlem adres_ayarları()
+	{
+		AdresYöneticisi.Ayarla("{kontrollör}/{aksiyon}/{parametre}", yeni { kontrollör = "ana",  aksiyon = "sayfa" });
+	}
+
+	işlem nesne_gereklilik_ayarları()
+	{
+		GerekenYöneticisi.GerekenEkle(...);
+	}
+}

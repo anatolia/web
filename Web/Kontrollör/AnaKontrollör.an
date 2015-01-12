@@ -1,0 +1,12 @@
+nesne AnaKontrollör : Kontrollör
+{
+	oluşturan AnaKontrollör()
+	{
+
+	}
+
+	işlem Sayfa()
+	{
+		getir Görünüm()
+	}
+}

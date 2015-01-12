@@ -1,0 +1,21 @@
+nesne ÜyeKontrollör : Kontrollör
+{
+	oluşturan ÜyeKontrollör()
+	{
+
+	}
+
+	[HttpGet]
+	işlem Yeni()
+	{
+		getir Görünüm();
+	}
+
+	[HttpPost]
+	işlem Yeni(ÜyeModeli model)	
+	{
+		
+
+		getir Görünüm();
+	}
+}
